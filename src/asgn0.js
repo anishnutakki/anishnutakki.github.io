@@ -115,12 +115,9 @@ function angleBetween(v1, v2) {
 function drawVector(v, color) {
   var canvas = document.getElementById('example');
   var ctx = canvas.getContext('2d');
-  let scale = 20;
-  let originX = 200;
-  let originY = 200;
   ctx.beginPath();
-  ctx.moveTo(originX, originY);
-  ctx.lineTo(originX + v.elements[0] * scale, originY - v.elements[1] * scale);
+  ctx.moveTo(200, 200);
+  ctx.lineTo(200 + v.elements[0] * 20, 200 - v.elements[1] * 20);
   ctx.strokeStyle = color;
   ctx.lineWidth = 1;
   ctx.stroke();
