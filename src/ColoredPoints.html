@@ -1,0 +1,42 @@
+<body onload="main()">
+  <div style="display: flex; align-items: flex-start;">
+    <div>
+      <canvas id="webgl" width="400" height="400">
+        Please use a browser that supports "canvas"
+      </canvas>
+      <p>
+      <p id="numdot"> XXX </p>
+      <button type="button" id="green">Green</button>
+      <button type="button" id="red">Red</button>
+      <button type="button" id="blue">Blue</button>
+      <button type="button" id="clear">Clear</button>
+      </p>
+      <button type="button" id="pointButton">Point</button>
+      <button type="button" id="triButton">Triangle</button>
+      <button type="button" id="cirButton">Circle</button>
+      <button type="button" id="randomDrawButton">Random Draw</button>
+      <p> 
+      <button type="button" id="logoButton">Draw Christmas Tree</button>
+
+      <p>
+      Red <input type="range" min="0" max="100" value="100" class="slider" id="redSlide">
+      Green <input type="range" min="0" max="100" value="100" class="slider" id="greenSlide">
+      Blue <input type="range" min="0" max="100" value="100" class="slider" id="blueSlide">
+      <p>
+      Size <input type="range" min="5" max="40" value="5" class="slider" id="sizeSlide">
+      Segments (Circle) <input type="range" min="10" max="100" value="10" class="slider" id="segSlide">
+    </div>
+
+    <div style="margin-left: 20px;">
+      <img src="../src/IMG_1887.png" alt="Image" style="max-width: 400px; height: auto;" />
+    </div>
+  </div>
+
+  <script src="../lib/webgl-utils.js"></script>
+  <script src="../lib/webgl-debug.js"></script>
+  <script src="../lib/cuon-utils.js"></script>
+  <script src="../src/ColoredPoints.js"></script>
+  <script src="../src/Point.js"></script>
+  <script src="../src/Triangle.js"></script>
+  <script src="../src/Circle.js"></script>
+</body>
