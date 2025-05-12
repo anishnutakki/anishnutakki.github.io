@@ -1,0 +1,38 @@
+<body onload="main()">
+  <div style="display: flex; align-items: flex-start;">
+    <div>
+      <canvas id="webgl" width="400" height="400">
+        Please use a browser that supports "canvas"
+      </canvas>
+      <p id="numdot"> XXX </p>
+      <p>Camera Angle <input type="range" min="0" max="90" value="0" id="angleSlide"></p>
+      <p>Legs Animation <input type="range" min="-10" max="10" value="0" id="legsSlide"></p>
+      <p>Wings Animation <input type="range" min="-15" max="15" value="0" id="wingsSlide"></p>
+      <p>Head Y Position <input type="range" min="-0.05" max="0.05" step="0.01" value="0.05" id="headYSlider"></p>
+      <p>Tail Animation <input type="range" min="-45" max="45" value="0" id="tailSlide"></p>
+
+      <p>
+      <div>
+        <p id="blockMode">Block Mode: ADD</p>
+        <p id="blockHeight">Block Height: 1</p>
+        <p id="targetBlock">Target Block: (0, 0)</p>
+      </div>
+        <button id="animationOnButton">Animation On</button>
+        <button id="animationOffButton">Animation Off</button>
+      </p>
+    </div>
+  </div>
+
+  <script src="../lib/webgl-utils.js"></script>
+  <script src="../lib/cuon-matrix.js"></script>
+  <script src="../lib/webgl-debug.js"></script>
+  <script src="../lib/cuon-utils.js"></script>
+  <script src="../src/Camera.js"></script>
+  <script src="../src/Point.js"></script>
+  <script src="../src/Triangle.js"></script>
+  <script src="../src/Circle.js"></script>
+  <script src="../src/Cube.js"></script>
+  <script src="../src/Cone.js"></script>
+  <script src="../src/World.js"></script>
+</body>
+ 
